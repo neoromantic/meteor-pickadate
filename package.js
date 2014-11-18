@@ -2,7 +2,7 @@ Package.describe({
   summary: "The mobile-friendly, responsive, and lightweight jQuery date & time input picker."
   , name: 'cwohlman:pickadate'
   , git: 'http://github.com/usefulio/meteor-pickadate.git'
-  , version: '0.0.0'
+  , version: "1.0.0"
 });
 
 Package.on_use(function (api, where) {
