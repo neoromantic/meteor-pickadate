@@ -3,7 +3,7 @@ meteor-pickadate
 
 The mobile-friendly, responsive, and lightweight jQuery date &amp; time input picker.
 
-
+Has been patched to support cyrillic characters in text fields
 
 
 Pickadate.js by Amsul

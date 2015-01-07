@@ -645,7 +645,7 @@ DatePicker.prototype.formats = (function() {
     function getWordLengthFromCollection( string, collection, dateObject ) {
 
         // Grab the first word from the string.
-        var word = string.match( /\w+/ )[ 0 ]
+        var word = string.match( /\w|[а-яА-Я]+/ )[ 0 ]
 
         // If there's no month index, add it to the date object
         if ( !dateObject.mm && !dateObject.m ) {
@@ -658,7 +658,7 @@ DatePicker.prototype.formats = (function() {
 
     // Get the length of the first word in a string.
     function getFirstWordLength( string ) {
-        return string.match( /\w+/ )[ 0 ].length
+        return string.match( /\w|[а-яА-Я]+/ )[ 0 ].length
     }
 
     return {
@@ -1344,6 +1344,3 @@ Picker.extend( 'pickadate', DatePicker )
 
 
 }));
-
-
-
