@@ -645,7 +645,7 @@ DatePicker.prototype.formats = (function() {
     function getWordLengthFromCollection( string, collection, dateObject ) {
 
         // Grab the first word from the string.
-        var word = string.match( /\w|[а-яА-Я]+/ )[ 0 ]
+        var word = string.match( /[\w\u0400-\u04FF]+/ )[ 0 ]
 
         // If there's no month index, add it to the date object
         if ( !dateObject.mm && !dateObject.m ) {
