@@ -11,10 +11,8 @@ Package.on_use(function (api, where) {
   api.add_files([
     'js/picker.js',
     'js/picker.date.js',
-    'js/picker.time.js',
     'js/legacy.js',
-    'css/default.css',
-    'css/default.date.css',
-    'css/default.time.css',
+    'css/classic.css',
+    'css/classic.date.css',
   ], 'client');
 });
